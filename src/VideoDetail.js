@@ -11,7 +11,7 @@ const VideoDetail = ({ video }) => {
   return (
     <div>
       <div className="ui embed">
-        <iframe src={videoSrc} />
+        <iframe title="My Youtube Clone" src={videoSrc} />
       </div>
       <div className="ui segment">
         <h4 className="ui header">{he.decode(video.snippet.title)}</h4>
