@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const KEY = "AIzaSyC_AcF_aoIUZ4ktY30LcVopLfuy1ciPVKU";
+require("dotenv").config();
 
 export default axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3",
   params: {
     part: "snippet",
     maxResults: 5,
-    key: KEY,
+    key: process.env.REACT_APP_YOUTUBE_DEV_KEY,
   },
 });
